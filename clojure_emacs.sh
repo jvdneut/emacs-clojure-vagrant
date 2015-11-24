@@ -12,9 +12,12 @@ if (! (dpkg-query -Wf'${db:Status-abbrev}' emacs24  | grep -q '^i')); then
     echo System has emacs24
 fi
 
+sudo apt-get install git -y
+
 if [ ! -f /home/vagrant/.emacs.d ]; then
   #cp /home/vagrant/src/.emacs /home/vagrant/.emacs
-  cp -R /home/vagrant/src/emacs-for-clojure-book1 /home/vagrant/.emacs.d
+  #cp -R /home/vagrant/src/emacs-for-clojure-book1 /home/vagrant/.emacs.d
+	git clone https://github.com/flyingmachine/emacs-for-clojure /home/vagrant/.emacs.d
   else
   echo System has .emacs
 fi
@@ -27,13 +30,19 @@ if (! (/home/vagrant/bin/lein version 2> /dev/null | grep -q 'Leiningen')); then
   echo System has Leiningen installed
 fi
 
-if [ ! -f /home/vagrant/.lein/.profiles ]; then
-  cp /home/vagrant/src/lein/.profiles /home/vagrant/.lein/.profiles
+if [ ! -f /home/vagrant/.lein/profiles.clj ]; then
+  cp /home/vagrant/src/lein/profiles.clj /home/vagrant/.lein/profiles.clj
   else
   echo System has .lein profile
 fi
 
-sudo apt-get install git -y
+#echo 'XTerm*metaSendsEscape: true' >> ~/.Xresources
+if [ ! -f /home/vagrant/~/.Xresources ]; then
+  cp /home/vagrant/src/Xresources /home/vagrant/.Xresources
+else
+  echo System has .Xresources file
+fi
+
 sudo apt-get install openjdk-7-jre -y
 sudo update-java-alternatives -s java-1.7.0-openjdk-i386
 sudo apt-get install vim -y
