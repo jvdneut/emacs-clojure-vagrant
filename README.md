@@ -4,13 +4,19 @@ The purpose of this project is to create a reproducable environment for learning
 
 I know Vim, but want to learn Emacs, so I will spend more time setting up a full Emacs environment.
 
+Based on bits from:
+* http://stackoverflow.com/questions/16872231/vagrant-clojure-emacs
+* https://github.com/Seajure/emacs-clojure-vagrant
+
 ### DONE
 * Set up correct version of Java
 * Set up Leinigen `lein`
 * Set up Git
 * Set up Emacs
-	* With settings from Clojure for the Brave and True website
-		* TODO link
+	* With **slightly modified** settings from Clojure for the Brave and True website
+		* https://github.com/flyingmachine/emacs-for-clojure
+		* TODO fork the settings in a separate repository?
+	* Install latest version of CIDER (update lein profile)
 * Set up Vim
 * Set up tmux
 * Opened up port 3449 for browser to connect to Figwheel
@@ -26,7 +32,6 @@ I know Vim, but want to learn Emacs, so I will spend more time setting up a full
 		* `ctrl+b c` to create a new panel in tmux
 		* `emacs .`
 		* `alt+x cider-jack-in` to connect to the figwheel REPL?
-	* Install latest version of CIDER (update lein profile)
 	* Install clj-refactor
 	* Set up a TDD environment
 * Set up Vim settings
