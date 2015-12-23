@@ -14,6 +14,8 @@ I know Vim, but want to learn Emacs, so I will spend more time setting up a full
 * Set up Vim
 * Set up tmux
 * Opened up port 3449 for browser to connect to Figwheel
+* Changed Vagrant box to be newer version of Ubuntu
+* Added Vagrant script to install Emacs 24.5 from source using linuxbrew
 
 ### TODO
 * Manage to connect CIDER to Figwheel
