@@ -18,16 +18,20 @@ I know Vim, but want to learn Emacs, so I will spend more time setting up a full
 * Added Vagrant script to install Emacs 24.5 from source using linuxbrew
 
 ### TODO
-* Manage to connect CIDER to Figwheel
-	* `lein new figwheel test` to create `test` project
-	* `tmux` to run tmux
-	* `lein figwheel` to run figwheel
-	* `ctrl+b c` to create a new panel in tmux
-	* `emacs .`
-	* `alt+x cider-jack-in` to connect to the figwheel REPL?
+* Emacs
+	* Manage to connect CIDER to Figwheel
+		* `lein new figwheel test` to create `test` project
+		* `tmux` to run tmux
+		* `lein figwheel` to run figwheel
+		* `ctrl+b c` to create a new panel in tmux
+		* `emacs .`
+		* `alt+x cider-jack-in` to connect to the figwheel REPL?
+	* Install latest version of CIDER (update lein profile)
+	* Install clj-refactor
+	* Set up a TDD environment
 * Set up Vim settings
 	* Fireplace etc
-* Set up a TDD environment for Emacs and Clojure
+* Learn Clojure ;-)
 
 ### Option -> Meta key
 In order to work with Emacs you have to map the Option/Alt key to act as the meta key in the terminal
